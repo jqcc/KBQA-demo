@@ -23,7 +23,6 @@ pip install -i http://pypi.douban.com/simple -- trusted-host pypi.douban.com -r 
 ```
 
 建议安装Apache-jena版本为3.7的，当时使用了最新版3.8出现过诸多问题。
-MySQL版本无所谓，若使用最新版配置环境时需注意一些问题。
 
 ### 二 使用前配置
 1. 在本地jena安装目录下创建tdb文件夹，用于存放tdb数据。
