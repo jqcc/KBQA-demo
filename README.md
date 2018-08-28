@@ -1,39 +1,40 @@
 # KBQA-demo
 
-±¾ÏîÄ¿Ê¹ÓÃPython´î½¨ÁËÒ»¸ö¼òÒ×µÄÎÊ´ğ³ÌĞò¡£ÏÂÍ¼ÊÇdemoµÄÕ¹Ê¾Ğ§¹û£º
+æœ¬é¡¹ç›®ä½¿ç”¨Pythonæ­å»ºäº†ä¸€ä¸ªç®€æ˜“çš„é—®ç­”ç¨‹åºã€‚ä¸‹å›¾æ˜¯demoçš„å±•ç¤ºæ•ˆæœï¼š
 
-![demoĞ§¹ûÍ¼](url)
+![demoæ•ˆæœå›¾](https://github.com/jqcc/KBQA-demo/blob/master/repo/show.PNG)
 
-## »·¾³ÒªÇó
+## ç¯å¢ƒè¦æ±‚
 - python3
 - apache-jena-3.7
 - apache-jena-fuseki-3.7
 
-## Ê¹ÓÃ
+## ä½¿ç”¨
 
-### Ò» »·¾³°²×°
-1. [°²×°python3](https://www.python.org/downloads/)
-2. [°²×°apache-jena](https://jena.apache.org/download/index.cgi)
-3. [°²×°apache-jena-fuseki](https://jena.apache.org/download/index.cg)
-4. clone´úÂë, °²×°¿âÒÀÀµ
+### ä¸€ ç¯å¢ƒå®‰è£…
+1. [å®‰è£…python3](https://www.python.org/downloads/)
+2. [å®‰è£…apache-jena](https://jena.apache.org/download/index.cgi)
+3. [å®‰è£…apache-jena-fuseki](https://jena.apache.org/download/index.cg)
+4. cloneä»£ç , å®‰è£…åº“ä¾èµ–
 ```
-git clone url
+git clone https://github.com/jqcc/KBQA-demo.git
 cd KBQA-demo
 pip install -i http://pypi.douban.com/simple -- trusted-host pypi.douban.com -r requirements.txt
 ```
 
-½¨Òé°²×°Apache-jena°æ±¾Îª3.7µÄ£¬µ±Ê±Ê¹ÓÃÁË×îĞÂ°æ3.8³öÏÖ¹ıÖî¶àÎÊÌâ¡£
-MySQL°æ±¾ÎŞËùÎ½£¬ÈôÊ¹ÓÃ×îĞÂ°æÅäÖÃ»·¾³Ê±Ğè×¢ÒâÒ»Ğ©ÎÊÌâ¡£
+å»ºè®®å®‰è£…Apache-jenaç‰ˆæœ¬ä¸º3.7çš„ï¼Œå½“æ—¶ä½¿ç”¨äº†æœ€æ–°ç‰ˆ3.8å‡ºç°è¿‡è¯¸å¤šé—®é¢˜ã€‚
+MySQLç‰ˆæœ¬æ— æ‰€è°“ï¼Œè‹¥ä½¿ç”¨æœ€æ–°ç‰ˆé…ç½®ç¯å¢ƒæ—¶éœ€æ³¨æ„ä¸€äº›é—®é¢˜ã€‚
 
-### ¶ş Ê¹ÓÃÇ°ÅäÖÃ
-1. ÔÚ±¾µØjena°²×°Ä¿Â¼ÏÂ´´½¨tdbÎÄ¼ş¼Ğ£¬ÓÃÓÚ´æ·ÅtdbÊı¾İ¡£
-2. ½øÈëjena\batÎÄ¼ş¼ĞÖ´ĞĞÅú´¦ÀíÎÄ¼ş .\tdbloader.bat --loc="jena\tdb" "path\to\KBQA-demo\kg_demo_movie.nt"
-3. ½øÈëjena-fusekiÔËĞĞ`fuseki-server.bat`, ³ÌĞò»áÔÚµ±Ç°Ä¿Â¼ÖĞ×Ô¶¯´´½¨`run`ÎÄ¼ş¼Ğ¡£
-4. °Ñ±¾ÌåÎÄ¼ş`ontology.ttl`ÒÆ¶¯µ½`jena-fuseki\run\database\`Ä¿Â¼ÏÂ¡£
-5. °Ñ`fuseki_conf.ttl`ÒÆ¶¯µ½`jena-fuseki\run\fuseki_conf\`Ä¿Â¼ÏÂ£¬ÓÃ¼ÇÊÂ±¾´ò¿ª£¬ÎÄ¼şÖĞÓĞÁ½´¦ĞèÒªĞŞ¸ÄÎª±¾µØÎÄ¼şÄ¿Â¼Î»ÖÃ£¬Ò»´¦ÊÇ`1`ÖĞ`tdb`µÄÂ·¾¶£¬ÁíÒ»´¦ÊÇ`4`ÖĞ`ontology.ttl`µÄÂ·¾¶¡£
-6. É¾³ı`jena\tdb`Ä¿Â¼ÖĞÒÔ`prefix`¿ªÍ·µÄÎÄ¼ş¡£
-7. Ë«»÷ÔËĞĞ`jena-fuseki\fuseki-server.bat`£¬Èç¹ûÃ»ÓĞ³öÏÖÒì³££¬²¢ÏÔÊ¾·şÎñÔËĞĞÔÚ`3030`¼´ÔËĞĞ³É¹¦¡£
+### äºŒ ä½¿ç”¨å‰é…ç½®
+1. åœ¨æœ¬åœ°jenaå®‰è£…ç›®å½•ä¸‹åˆ›å»ºtdbæ–‡ä»¶å¤¹ï¼Œç”¨äºå­˜æ”¾tdbæ•°æ®ã€‚
+2. è¿›å…¥jena\batæ–‡ä»¶å¤¹æ‰§è¡Œæ‰¹å¤„ç†æ–‡ä»¶ .\tdbloader.bat --loc="jena\tdb" "path\to\KBQA-demo\kg_demo_movie.nt"
+3. è¿›å…¥jena-fusekiè¿è¡Œ`fuseki-server.bat`, ç¨‹åºä¼šåœ¨å½“å‰ç›®å½•ä¸­è‡ªåŠ¨åˆ›å»º`run`æ–‡ä»¶å¤¹ã€‚
+4. æŠŠæœ¬ä½“æ–‡ä»¶`ontology.ttl`ç§»åŠ¨åˆ°`jena-fuseki\run\database\`ç›®å½•ä¸‹ã€‚
+5. æŠŠ`fuseki_conf.ttl`ç§»åŠ¨åˆ°`jena-fuseki\run\fuseki_conf\`ç›®å½•ä¸‹ï¼Œç”¨è®°äº‹æœ¬æ‰“å¼€ï¼Œæ–‡ä»¶ä¸­æœ‰ä¸¤å¤„éœ€è¦ä¿®æ”¹ä¸ºæœ¬åœ°æ–‡ä»¶ç›®å½•ä½ç½®ï¼Œä¸€å¤„æ˜¯`1`ä¸­`tdb`çš„è·¯å¾„ï¼Œå¦ä¸€å¤„æ˜¯`4`ä¸­`ontology.ttl`çš„è·¯å¾„ã€‚
+6. åˆ é™¤`jena\tdb`ç›®å½•ä¸­ä»¥`prefix`å¼€å¤´çš„æ–‡ä»¶ã€‚
+7. åŒå‡»è¿è¡Œ`jena-fuseki\fuseki-server.bat`ï¼Œå¦‚æœæ²¡æœ‰å‡ºç°å¼‚å¸¸ï¼Œå¹¶æ˜¾ç¤ºæœåŠ¡è¿è¡Œåœ¨`3030`å³è¿è¡ŒæˆåŠŸã€‚
 
-### Èı Ê¹ÓÃKBQA-demo
-1. Æô¶¯jenaµÄ3030·şÎñ¡£(Èç¹ûÕâÒ»²½³öÏÖÒì³££¬¿É³¢ÊÔÉ¾³ı`tdb\prefix*`)¡£
-2. ÔËĞĞ`KBQA-demo\kbqa_demo_movie\query_main.py`¡£
+### ä¸‰ ä½¿ç”¨KBQA-demo
+1. å¯åŠ¨jenaçš„3030æœåŠ¡ã€‚(å¦‚æœè¿™ä¸€æ­¥å‡ºç°å¼‚å¸¸ï¼Œå¯å°è¯•åˆ é™¤`tdb\prefix*`)ã€‚
+2. è¿è¡Œ`KBQA-demo\kbqa_demo_movie\query_main.py`ã€‚
+
